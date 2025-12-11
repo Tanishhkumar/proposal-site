@@ -1,0 +1,96 @@
+.star-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b0034 0%, #000000 100%);
+  z-index: -1;
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 0;
+}
+
+.stars {
+  background-image: url("./assets/stars.png");
+  background-repeat: repeat;
+  animation: moveStars 120s linear infinite;
+  opacity: 0.8;
+}
+
+.twinkling {
+  background-image: url("./assets/stars.png");
+  background-repeat: repeat;
+  animation: moveTwinkling 200s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes moveStars {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-1000px, 500px, 0); }
+}
+
+@keyframes moveTwinkling {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(1000px, -500px, 0); }
+}
+
+
+
+
+/* .star-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b0034 0%, #000000 100%);
+  z-index: -1;
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 0;
+}
+
+.stars {
+  background-image: url("../public/assets/stars.png") repeat;
+  animation: moveStars 120s linear infinite;
+  opacity: 0.8;
+}
+
+.twinkling {
+  background: url("https://city-png.b-cdn.net/preview/preview_public/uploads/preview/hd-pink-star-glowing-light-effect-transparent-background-701751711536286tcilw9i4la.png") repeat;
+  animation: moveTwinkling 200s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes moveStars {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-1000px, 500px, 0);
+  }
+}
+
+@keyframes moveTwinkling {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(1000px, -500px, 0);
+  }
+} */
