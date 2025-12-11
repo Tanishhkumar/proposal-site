@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FiPlay, FiPause } from "react-icons/fi";
-import "./MusicPlayer.css";
 
 const MusicPlayer = ({ autoPlayOnInteraction = true, volume = 0.15 }) => {
   const audioRef = useRef(null);
