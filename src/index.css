@@ -462,3 +462,25 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
+/* ================= MOBILE POLAROID LAYOUT ================= */
+@media (max-width: 768px) {
+  .polaroid-grid {
+    grid-template-columns: 1fr; /* ONE card per row */
+    gap: 22px;
+  }
+
+  .card,
+  .flip-card {
+    max-width: 92%;
+    margin: 0 auto;
+  }
+
+  .card-img {
+    height: 240px; /* better look on phone */
+  }
+
+  .memories-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}
